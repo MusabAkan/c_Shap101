@@ -1,10 +1,33 @@
-﻿internal partial class Program
+﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+
+internal partial class Program
 {
     private static void Main(string[] args)
     {
-        OzYenileme();
+        //OzYenileme();
 
+        int piece;
+
+        Console.Write("Adet Sayısı Giriniz : ");
+        int.TryParse(Console.ReadLine(), out piece);
+
+        piece.IsPostive();
+
+        int[] numberList = new int[piece];
+
+        for (int i = 0; i < piece; i++)
+        {
+            Console.Write($"{i + 1}. Sayı Giriniz : ");
+            int.TryParse(Console.ReadLine(), out int evenNumber);
+
+            if (evenNumber.IsPositiveEvenNumber())
+                numberList[i] = evenNumber;
+        }
+
+        numberList.PrintPositiveEvenNumber();
     }
+
+
 
     private static void OzYenileme()
     {
@@ -83,5 +106,29 @@
             toplam += dizi;
 
         Console.WriteLine("Ortalama : " + toplam / elemanSayi);
+    }
+}
+public static class PositiveNumber
+{
+
+    public static bool IsPositiveEvenNumber(this int number)
+    {
+        return number % 2 == 0 && number > 0;
+    }
+    public static void PrintPositiveEvenNumber(this int[] ints)
+    {
+        Array.Sort(ints);
+
+        foreach (int @int in ints)
+            if (@int.IsPositiveEvenNumber())
+                Console.WriteLine(@int);
+
+        Console.ReadKey();
+    }
+    public static void IsPostive(this int value)
+    {
+        if (value <= 0)
+            Console.WriteLine("Sayı 0'dan büyük olmalıdır aksine karakter girilemez");
+        return;
     }
 }
