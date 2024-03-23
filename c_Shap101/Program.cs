@@ -1,4 +1,5 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿using System;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 internal partial class Program
 {
@@ -7,9 +8,22 @@ internal partial class Program
         //OzYenileme();
         //homework_1_1();
         //homework_1_2();
+        //homework_1_3();
+
+
+
+
+
+
+        //words.
+
+
 
     }
 
+    
+
+    #region homework
     private static void homework_1_2()
     {
         int[] positiveDivisors = new int[2];
@@ -54,6 +68,19 @@ internal partial class Program
         numberList.PrintPositiveEvenNumber();
     }
 
+    private static void homework_1_3()
+    {
+        Console.Write("Adet Sayısı Giriniz : ");
+        int.TryParse(Console.ReadLine(), out int piece);
+
+        piece.IsPostive();
+
+        string[] words = new string[piece];
+
+        words.EnterTextArray();
+        words.WriteTextsBackwards();
+    }
+    #endregion    
     private static void OzYenileme()
     {
 
@@ -94,7 +121,6 @@ internal partial class Program
 
         Console.ReadKey();
     }
-
     private static void Test()
     {
         //try
@@ -133,55 +159,23 @@ internal partial class Program
         Console.WriteLine("Ortalama : " + toplam / elemanSayi);
     }
 }
-public static class PositiveNumber
+public static class Library
 {
-    
-    public static int[] EnterNumberArray(this int[] arrys)
+
+    public static void WriteTextsBackwards(this string[] arrays)
+    {
+        for (int i = arrays.Length; i != 0; i--)
+            Console.WriteLine(arrays[i - 1]);
+        Console.ReadKey();
+    }
+    public static string[] EnterTextArray(this string[] arrys)
     {
         for (int i = 0; i < arrys.Length; i++)
         {
-        again:
-            Console.Write($"{i + 1}. Sayı Giriniz : ");
-            int.TryParse(Console.ReadLine(), out int number);
-
-            if (number.IsPostive())
-                arrys[i] = number;
-            else
-                goto again;
+            Console.Write($"{i + 1}. Metin Giriniz : ");
+            string text = Console.ReadLine();
+            arrys[i] = text;
         }
         return arrys;
-    }
-
-    public static bool IsPositiveEvenNumber(this int number)
-    {
-        return number % 2 == 0 && number > 0;
-    }
-    public static void PrintWindow(this int @int)
-    {
-        Console.WriteLine(@int);
-        Console.ReadKey();
-    }
-    public static void PrintPositiveEvenNumber(this int[] ints)
-    {
-
-        Array.Sort(ints);
-
-        foreach (int @int in ints)
-            if (@int.IsPositiveEvenNumber())
-                Console.WriteLine(@int);
-
-        Console.ReadKey();
-    }
-
-
-
-    public static bool IsPostive(this int value)
-    {
-        if (value <= 0)
-        {
-            Console.WriteLine("Sayı 0'dan büyük olmalıdır");
-            return false;
-        }
-        return true;
     }
 }
