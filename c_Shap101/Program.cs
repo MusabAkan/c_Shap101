@@ -5,7 +5,34 @@ internal partial class Program
     private static void Main(string[] args)
     {
         //OzYenileme();
+        //homework_1_1();
+        //homework_1_2();
 
+    }
+
+    private static void homework_1_2()
+    {
+        int[] positiveDivisors = new int[2];
+        positiveDivisors.EnterNumberArray();
+
+        Console.Write("Adet Sayısı Giriniz : ");
+        int.TryParse(Console.ReadLine(), out int piece);
+
+        piece.IsPostive();
+
+        int[] numbers = new int[piece];
+
+        numbers.EnterNumberArray();
+
+        foreach (var number in numbers)
+        {
+            if (number % positiveDivisors[0] == default && number % positiveDivisors[1] == default)
+                number.PrintWindow();
+        }
+    }
+
+    private static void homework_1_1()
+    {
         int piece;
 
         Console.Write("Adet Sayısı Giriniz : ");
@@ -26,8 +53,6 @@ internal partial class Program
 
         numberList.PrintPositiveEvenNumber();
     }
-
-
 
     private static void OzYenileme()
     {
@@ -110,13 +135,35 @@ internal partial class Program
 }
 public static class PositiveNumber
 {
+    
+    public static int[] EnterNumberArray(this int[] arrys)
+    {
+        for (int i = 0; i < arrys.Length; i++)
+        {
+        again:
+            Console.Write($"{i + 1}. Sayı Giriniz : ");
+            int.TryParse(Console.ReadLine(), out int number);
+
+            if (number.IsPostive())
+                arrys[i] = number;
+            else
+                goto again;
+        }
+        return arrys;
+    }
 
     public static bool IsPositiveEvenNumber(this int number)
     {
         return number % 2 == 0 && number > 0;
     }
+    public static void PrintWindow(this int @int)
+    {
+        Console.WriteLine(@int);
+        Console.ReadKey();
+    }
     public static void PrintPositiveEvenNumber(this int[] ints)
     {
+
         Array.Sort(ints);
 
         foreach (int @int in ints)
@@ -125,10 +172,16 @@ public static class PositiveNumber
 
         Console.ReadKey();
     }
-    public static void IsPostive(this int value)
+
+
+
+    public static bool IsPostive(this int value)
     {
         if (value <= 0)
-            Console.WriteLine("Sayı 0'dan büyük olmalıdır aksine karakter girilemez");
-        return;
+        {
+            Console.WriteLine("Sayı 0'dan büyük olmalıdır");
+            return false;
+        }
+        return true;
     }
 }
