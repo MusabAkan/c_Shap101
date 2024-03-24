@@ -6,6 +6,22 @@ internal class Program
     {
         //question_1();
         //question_2();
+
+
+        Console.Write("Metin Giriniz : ");
+        string text = Console.ReadLine();
+
+        ArrayList lists = [];
+
+        for (int i = 0; i < text.Length; i++)
+            if (Convert.ToString(text[i]).Trim() != string.Empty)
+                lists.Add(text[i]);
+
+        lists.Sort();
+
+        foreach (var list in lists)
+            Console.WriteLine(list.ToString());
+        Console.ReadKey();
     }
 
     private static void question_2()
