@@ -5,14 +5,20 @@ internal partial class Program
 {
     private static void Main(string[] args)
     {
-        //OzYenileme();
-        //homework_1_1();
-        //homework_1_2();
-        //homework_1_3();
+        List<int> sayilarListesi = [13, 24, 332, 44];
 
-        homework_1_4();
+        List<string> metinListesi = new();
 
-        //words.
+        metinListesi.Add($"{Environment.NewLine} Kırmız");
+        metinListesi.Add($"{Environment.NewLine} Yeşil");
+        metinListesi.Add($"{Environment.NewLine} Pembe");
+        metinListesi.Add($"{Environment.NewLine} Turuncu");
+
+
+        foreach (int i in sayilarListesi)
+            Console.WriteLine(i);
+
+        metinListesi.ForEach(i => Console.WriteLine(i));
 
 
 

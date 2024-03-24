@@ -46,3 +46,57 @@ static int FibonacciSerisi(int sayi)
     else
         return FibonacciSerisi(sayi-1)+FibonacciSerisi(sayi-2);
 }
+
+Koleksiyon(Collections) Nedir ?
+
+
+Klasik programlama dillerinde array yani diziler çok önemli veri tipleridir. Birçok problemimizi diziler yardýmýyla çözebiliriz ama bazý handikaplarý nedeniyle birçok sorun karþýsýnda da yetersiz kalýrlar.Bu sorunlarý þöyle sýralayabiliriz:
+
+
+
+Array'in elemanlarý ayný veri tipinde olmalýdýr.
+Array'in boyutu önceden belirlenmelidir.
+
+
+Oysa programlama dillerinde farklý türlerde verileri saklamaya ihtiyaç duyarýz. Ve çoðu zaman ne kadar veri saklayacaðýmýz program akýþýnda belli olabilir. Koleksiyonlar tam da bu sorunlarý çözmek için dizilerin handikaplarýndan yaratýlmýþtýr.
+
+
+
+Dizilerin aksine koleksiyonlarýn bazý tipleri; üzerinde çalýþtýklarý makinaýn RAM'i yettiði sürece geniþleyebilirler ve farklý türlerde veri tiplerini saklayabilirler.
+
+Koleksiyonlarýn elemanlarý object tipindedir. Hatýrlayacak olursak öðrendiðimiz veri tipleri için object sýnýfýndan türediklerini söylemiþtik. Yani bu bir sorun deðil, her türlü veriyi koleksiyonlar içerisinde saklayabiliriz.
+
+
+
+Koleksiyonlar System.Collections namespace i yani isim uzayý altýnda bulunurlar. Yani bir koleksiyon tipini kullanmak istiyorsanýz System.Collections'ý using direktifi ile programýnýza import ediyor olmanýz gerekiyor.
+
+
+
+Peki bu Koleksiyonlar'ýn hiç dezavantajý yok mu? Olmaz olur mu tabiki var. Gelin yakýndan bakalým.
+
+
+
+Dezavantajlarý
+
+
+.NEt platformda kullanýdýðýmýz veri tipleri 2'ye ayrýlýr. Deðer ve referans veri tipleridir. Deðer tipleri belliðin stack bölgesinde tutulurken, Referans tipleri belleðin heap bölgesinde tutulur.
+
+
+
+Deðer Tipleri: int, long, float, double, decimal, char, bool, byte, short, struct, enum
+
+
+Referans Tipleri: string, object, class, interface, array, delegate, pointer
+
+
+
+
+Bir deðer tipinin referans tipine dönüþtürülme boxing, tam tersine unboxing iþlemi denir.
+
+Koleksiyonlar verilerini object tipinde tutuyor demiþtik. Object de bir referans tipi. Bu demek oluyor ki deðer tipinde bir veriyi koleksiyona eklemek istediðimde bir boxing iþlemi yapýyorum. Daha sonra elemaný okumak istediðimde de unboxing iþlemi yapýyorum. Boxing ve unboxing iþlemleri bilgisayar açýsýndan maliyetli bir iþlemdir. Koleksiyon içerisindeki eleman sayýsýnýn artýþýna baðlý olarak bu boxing ve unboxing iþlemlerinin sayýsý artacaktýr. Buna baðlý olarakta uygulamanýn performansý olumsuz yönde etkilenecektir.
+
+
+
+NOT: Boxing ve unboxing iþlemlerinin performansa etkisine detaylý bakmak için þu makaleyi okumanýzý öneririm:
+
+https://www.buraksenyurt.com/post/Boxing-ve-Unboxing-Performans-Kritigi-bsenyurt-com-dan
