@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TelephoneDirectory", "Telep
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AveragePrograming", "AveragePrograming\AveragePrograming.csproj", "{1BBA93A6-3EAA-4F1D-87B5-EC6EC19D8B09}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawingATriangle", "DrawingATriangle\DrawingATriangle.csproj", "{D5D35A56-A30E-447E-BB57-9ABEBA4C66ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{1BBA93A6-3EAA-4F1D-87B5-EC6EC19D8B09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BBA93A6-3EAA-4F1D-87B5-EC6EC19D8B09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1BBA93A6-3EAA-4F1D-87B5-EC6EC19D8B09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5D35A56-A30E-447E-BB57-9ABEBA4C66ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5D35A56-A30E-447E-BB57-9ABEBA4C66ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5D35A56-A30E-447E-BB57-9ABEBA4C66ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5D35A56-A30E-447E-BB57-9ABEBA4C66ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
