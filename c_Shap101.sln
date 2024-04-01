@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawingATriangle", "Drawing
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircleDrawer", "CircleDrawer\CircleDrawer.csproj", "{E01935A8-5699-4D34-9B28-E5A6177D206A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm", "Algorithm\Algorithm.csproj", "{14B6207E-F3AE-498B-A30F-7DED9F6B9FA8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{E01935A8-5699-4D34-9B28-E5A6177D206A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E01935A8-5699-4D34-9B28-E5A6177D206A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E01935A8-5699-4D34-9B28-E5A6177D206A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14B6207E-F3AE-498B-A30F-7DED9F6B9FA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14B6207E-F3AE-498B-A30F-7DED9F6B9FA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14B6207E-F3AE-498B-A30F-7DED9F6B9FA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14B6207E-F3AE-498B-A30F-7DED9F6B9FA8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,12 +6,12 @@
         {
             while (true)
             {
-                Console.Write("Enter the radius of the circle: ");
+                Console.Write("Çemberin yarıçapını girin: ");
                 if (int.TryParse(Console.ReadLine(), out int radius) && radius > 0)
                 {
                     return radius;
                 }
-                Console.WriteLine("Please enter a positive integer.");
+                Console.WriteLine("Lütfen pozitif bir tamsayı girin");
             }
         }
     }
