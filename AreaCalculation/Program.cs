@@ -34,7 +34,7 @@
 
             case "dikdörtgen":
                 shape = new Rectangle();
-                ((Rectangle)shape).CalculateCreate();               
+                ((Rectangle)shape).CalculateCreate();
                 break;
 
             case "üçgen":
@@ -50,6 +50,11 @@
         Console.WriteLine("Hesaplamak istediğiniz boyutu seçin: (alan, çevre)");
         string calculationType = Console.ReadLine().ToLower();
 
+        CalculateShape(shape, calculationType);
+    }
+
+    private static void CalculateShape(Shape shape, string calculationType)
+    {
         double result;
 
         switch (calculationType)
