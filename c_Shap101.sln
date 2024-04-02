@@ -9,13 +9,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "homework2", "homework2\home
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TelephoneDirectory", "TelephoneDirectory\TelephoneDirectory.csproj", "{0BD25767-BE7E-4B7F-80DD-F276EA3388DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AveragePrograming", "AveragePrograming\AveragePrograming.csproj", "{1BBA93A6-3EAA-4F1D-87B5-EC6EC19D8B09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AveragePrograming", "AveragePrograming\AveragePrograming.csproj", "{1BBA93A6-3EAA-4F1D-87B5-EC6EC19D8B09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawingATriangle", "DrawingATriangle\DrawingATriangle.csproj", "{D5D35A56-A30E-447E-BB57-9ABEBA4C66ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrawingATriangle", "DrawingATriangle\DrawingATriangle.csproj", "{D5D35A56-A30E-447E-BB57-9ABEBA4C66ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircleDrawer", "CircleDrawer\CircleDrawer.csproj", "{E01935A8-5699-4D34-9B28-E5A6177D206A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CircleDrawer", "CircleDrawer\CircleDrawer.csproj", "{E01935A8-5699-4D34-9B28-E5A6177D206A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm", "Algorithm\Algorithm.csproj", "{14B6207E-F3AE-498B-A30F-7DED9F6B9FA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithm", "Algorithm\Algorithm.csproj", "{14B6207E-F3AE-498B-A30F-7DED9F6B9FA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AreaCalculation", "AreaCalculation\AreaCalculation.csproj", "{898BCF95-241D-4656-9F06-1A80AE795111}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{14B6207E-F3AE-498B-A30F-7DED9F6B9FA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14B6207E-F3AE-498B-A30F-7DED9F6B9FA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14B6207E-F3AE-498B-A30F-7DED9F6B9FA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{898BCF95-241D-4656-9F06-1A80AE795111}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{898BCF95-241D-4656-9F06-1A80AE795111}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{898BCF95-241D-4656-9F06-1A80AE795111}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{898BCF95-241D-4656-9F06-1A80AE795111}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
