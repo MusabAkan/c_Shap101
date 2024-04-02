@@ -1,15 +1,38 @@
 ﻿
 
+using System.Collections.Generic;
+
 public static class Extension
 {
-    private const char Space = ' ';
+    private const string Space = " ";
     private const char Comma = ',';
     private const byte Zero = 0;
     private const string StringEmpty = "";
     private const int number67 = 67;
-    public static string AbsoluteSquareSearch(this string @string)
+
+    public static string ChangeFirstLastCharacter(this string @string)
     {
         string value = string.Empty;
+
+        string[] spaces = @string.Split(Space);
+        foreach (string space in spaces)
+        {
+            if (space.Contains(Space))
+                continue;
+
+            if (space.Length > 2)
+                value += space.Substring(space.Length - 1, 1) + space.Substring(1, space.Length - 2) + space.Substring(Zero, 1) + " ";
+            else if (space.Length == 2)
+                value += space.Substring(space.Length - 1, 1) + space.Substring(Zero, 1) + " ";
+            else
+                value += space;
+        }
+
+        return value;
+    }
+
+    public static string AbsoluteSquareSearch(this string @string)
+    {
         string[] spaces = @string.Split(Space);
         int[] numbers = new int[spaces.Length];
 
@@ -33,13 +56,13 @@ public static class Extension
 
     }
     public static string IntegerBinaries(this string @string)
-    {       
+    {
         string[] spaces = @string.Split(Space);
         int[] numbers = new int[spaces.Length];
 
         for (int i = Zero; i < spaces.Length; i++)
         {
-            if (!spaces[i].Contains(Space))
+            if (spaces[i].Contains(Space))
                 numbers[i] = int.Parse(spaces[i]);
         }
 
@@ -69,6 +92,8 @@ public static class Extension
 
         foreach (string space in spaces)
         {
+            if (space.Contains(Space))
+                continue;
 
             value = StringEmpty;
             int spaceLength = space.Length;
@@ -98,7 +123,7 @@ public static class Extension
 
         foreach (string space in spaces)
         {
-            if (!space.Contains(Space))
+            if (space.Contains(Space))
             {
                 string[] splits = space.Split(Comma);
                 string word = splits[0];

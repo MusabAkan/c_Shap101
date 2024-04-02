@@ -8,7 +8,8 @@
 
         //Console.WriteLine(input.ExtractCharacterFromIndex());
         //Console.WriteLine(input.ReplacesThePreviousCharacter());
-        Console.Write(input.AbsoluteSquareSearch());
+        //Console.Write(input.AbsoluteSquareSearch());
+        Console.Write(input.ChangeFirstLastCharacter());
 
         Console.ReadKey();
     }
@@ -41,6 +42,13 @@
     Örnek: Input: 56 45 68 77
 
     Output: 33 101
+
+    Algoritma - 5  
+    Verilen string ifade içerisindeki ilk ve son karakterin yerini değiştirip tekrar ekrana yazdıran console uygulamasını yazınız.
+
+    Örnek: Input: Merhaba Hello Algoritma x
+
+    Output: aerhabM oellH algoritmA x
 
     */
 }
