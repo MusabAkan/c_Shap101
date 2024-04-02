@@ -24,30 +24,24 @@
         {
             case "daire":
                 shape = new Circle();
-                Console.WriteLine("Dairenin yarıçapını girin:");
-                ((Circle)shape).Radius = double.Parse(Console.ReadLine());
+                ((Circle)shape).CalculateCreate();
                 break;
+
             case "kare":
                 shape = new Square();
-                Console.WriteLine("Karenin bir kenar uzunluğunu girin:");
-                ((Square)shape).Side = double.Parse(Console.ReadLine());
+                ((Square)shape).CalculateCreate();
                 break;
+
             case "dikdörtgen":
                 shape = new Rectangle();
-                Console.WriteLine("Dikdörtgenin uzun kenarını girin:");
-                ((Rectangle)shape).Length = double.Parse(Console.ReadLine());
-                Console.WriteLine("Dikdörtgenin kısa kenarını girin:");
-                ((Rectangle)shape).Width = double.Parse(Console.ReadLine());
+                ((Rectangle)shape).CalculateCreate();               
                 break;
+
             case "üçgen":
                 shape = new Triangle();
-                Console.WriteLine("Üçgenin ilk kenarını girin:");
-                ((Triangle)shape).Side1 = double.Parse(Console.ReadLine());
-                Console.WriteLine("Üçgenin ikinci kenarını girin:");
-                ((Triangle)shape).Side2 = double.Parse(Console.ReadLine());
-                Console.WriteLine("Üçgenin üçüncü kenarını girin:");
-                ((Triangle)shape).Side3 = double.Parse(Console.ReadLine());
+                ((Triangle)shape).CalculateCreate();
                 break;
+
             default:
                 Console.WriteLine("Geçersiz şekil seçildi.");
                 return;
