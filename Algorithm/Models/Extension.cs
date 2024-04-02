@@ -1,4 +1,4 @@
-﻿using System;
+﻿
 
 public static class Extension
 {
@@ -6,10 +6,34 @@ public static class Extension
     private const char Comma = ',';
     private const byte Zero = 0;
     private const string StringEmpty = "";
-
-    public static string IntegerBinaries(this string @string)
+    private const int number67 = 67;
+    public static string AbsoluteSquareSearch(this string @string)
     {
         string value = string.Empty;
+        string[] spaces = @string.Split(Space);
+        int[] numbers = new int[spaces.Length];
+
+        for (int i = Zero; i < spaces.Length; i++)
+        {
+            if (!spaces[i].Contains(Space))
+                numbers[i] = int.Parse(spaces[i]);
+        }
+
+        double once = 0, before = 0;
+
+        foreach (int number in numbers)
+        {
+            if (number < number67)
+                once += number67 - number;
+            else
+                before += Math.Pow(number - number67, 2);
+        }
+
+        return $"{once} {before}";
+
+    }
+    public static string IntegerBinaries(this string @string)
+    {       
         string[] spaces = @string.Split(Space);
         int[] numbers = new int[spaces.Length];
 
@@ -23,7 +47,7 @@ public static class Extension
         int before = 0;
 
         for (int i = Zero; i < numbers.Length; i++)
-        { 
+        {
             if (i % 2 != Zero)
             {
                 if (numbers[i] == before)

@@ -8,7 +8,7 @@
 
         //Console.WriteLine(input.ExtractCharacterFromIndex());
         //Console.WriteLine(input.ReplacesThePreviousCharacter());
-        Console.Write(input.IntegerBinaries());
+        Console.Write(input.AbsoluteSquareSearch());
 
         Console.ReadKey();
     }
@@ -34,6 +34,13 @@
     Örnek Input: 2 3 1 5 2 5 3 3
     
     Output: 5 6 7 81
+
+    Algoritma - 4
+    Ekrandan girilen n tane sayının 67'den küçük yada büyük olduğuna bakan. Küçük olanların farklarının toplamını, büyük ise de farkların mutlak karelerini alarak toplayıp ekrana yazdıran console uygulamasını yazınız.
+
+    Örnek: Input: 56 45 68 77
+
+    Output: 33 101
 
     */
 }
