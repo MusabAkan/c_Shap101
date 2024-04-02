@@ -1,8 +1,4 @@
-﻿
-
-using System.Collections.Generic;
-
-public static class Extension
+﻿public static class Extension
 {
     private const string Space = " ";
     private const char Comma = ',';
@@ -10,6 +6,53 @@ public static class Extension
     private const string StringEmpty = "";
     private const int number67 = 67;
 
+    public static string SideSilent(this string @string)
+    {
+        //Önce ünlüleri ayır 
+        char[] vowels = ['a', 'A', 'e', 'E', 'ı', 'I', 'i', 'İ', 'o', 'O', 'ö', 'Ö', 'u', 'U', 'ü', 'Ü'];
+
+        string[] spaces = @string.Split(Space);       
+        string value = string.Empty;
+
+        foreach (string space in spaces)
+        {
+            if (space.Contains(Space))
+                continue;
+
+            string status = string.Empty;
+
+            for (int i = 0; i < space.Length; i++)
+                status += (vowels.FirstOrDefault(x => x.Equals(space[i])) == '\0').ToString() + " ";
+
+            //daha sonrasın ünsüz olanları yakalamaya çalış
+
+            string before = Space, once = Space;
+
+            string[] splits = status.Trim().Split(' ');
+
+            string result = "False";
+            for (int i = 0; i < splits.Length; i++)
+            {
+                once = splits[i];
+                if (before == once && before == "True")
+                {
+                    result = "True";
+                    break;
+                }
+                else
+                {
+                    if (i == 0)
+                        continue;
+                    before = once;                         
+                }
+            }
+
+            value += result + Space;
+
+        }
+
+        return value;
+    }
     public static string ChangeFirstLastCharacter(this string @string)
     {
         string value = string.Empty;

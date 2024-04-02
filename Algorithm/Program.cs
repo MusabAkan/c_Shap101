@@ -9,7 +9,8 @@
         //Console.WriteLine(input.ExtractCharacterFromIndex());
         //Console.WriteLine(input.ReplacesThePreviousCharacter());
         //Console.Write(input.AbsoluteSquareSearch());
-        Console.Write(input.ChangeFirstLastCharacter());
+        //Console.Write(input.ChangeFirstLastCharacter());
+        Console.Write(input.SideSilent());
 
         Console.ReadKey();
     }
@@ -49,6 +50,13 @@
     Örnek: Input: Merhaba Hello Algoritma x
 
     Output: aerhabM oellH algoritmA x
+
+    Algoritma - 6 
+    Verilen string ifade içerisinde yanyana 2 tane sessiz varsa ekrana true, yoksa false yazdıran console uygulamasını yazınız.
+
+    Örnek: Input: Merhaba Umut Arya
+
+    Output: True False True
 
     */
 }
