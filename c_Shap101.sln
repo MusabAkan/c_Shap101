@@ -21,7 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AreaCalculation", "AreaCalc
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VotingApplication", "VotingApplication\VotingApplication.csproj", "{929E8DB0-97BC-460C-9E68-7BCFFD03D7AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassMetotDemo", "ClassMetotDemo\ClassMetotDemo.csproj", "{A4FA92BE-043E-445A-A90A-E65F5CFD9BE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassMetotDemo", "ClassMetotDemo\ClassMetotDemo.csproj", "{A4FA92BE-043E-445A-A90A-E65F5CFD9BE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATMApplicaiton", "ATMApplicaiton\ATMApplicaiton.csproj", "{47ABE4E9-F5BA-42B3-A922-6BBA6AEB9233}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{A4FA92BE-043E-445A-A90A-E65F5CFD9BE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4FA92BE-043E-445A-A90A-E65F5CFD9BE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4FA92BE-043E-445A-A90A-E65F5CFD9BE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47ABE4E9-F5BA-42B3-A922-6BBA6AEB9233}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47ABE4E9-F5BA-42B3-A922-6BBA6AEB9233}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47ABE4E9-F5BA-42B3-A922-6BBA6AEB9233}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47ABE4E9-F5BA-42B3-A922-6BBA6AEB9233}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
