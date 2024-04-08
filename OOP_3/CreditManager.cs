@@ -11,7 +11,7 @@ namespace OOP_3
 
     //interfacelarde o interfave implente eden class'ı referans numrasınıs tutabiliyor
 
-    internal interface ICreditManager
+    interface ICreditManager
     {
         void Calculate();
         void CustomDoIt();

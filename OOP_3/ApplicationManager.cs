@@ -8,7 +8,8 @@ namespace OOP_3
 {
     internal class ApplicationManager
     {
-        public void MakeApplication(ICreditManager manager)
+        //Method injection
+        public void MakeApplication(ICreditManager manager, List<ILoggerService> loggerServices)
         {
             //başvuru bilgilerini değerlendirme
             /*
@@ -18,13 +19,15 @@ namespace OOP_3
             //design patern kırılma noktası burası çünkü böyle yazarsan katmanları bağımlı hale getirsin bu  doğru bir şey değil. Bu yüzden ; 
             //bellekte ihtiyaç kredi çalışır
             manager.Calculate();
+            foreach (var loggerService in loggerServices)
+                loggerService.Log();
 
         }
 
         public void GiveCreditPreliminaryInformation(List<ICreditManager> managers)
         {
             foreach (ICreditManager manager in managers)
-                manager.Calculate ();
+                manager.Calculate();
         }
     }
 }
