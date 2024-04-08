@@ -27,6 +27,8 @@ namespace Classes
         }
         public int Id { get; set; }
 
+        //kapsülleme işlemleri
+
         private string firstName;
 
         private string GenderGeneration(Gender gender)

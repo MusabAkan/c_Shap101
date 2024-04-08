@@ -4,11 +4,11 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        CustomerManager customerManager = new CustomerManager();
+        CustomerManager customerManager = new ();
         customerManager.Add();
         customerManager.Update();
 
-        ProductManager productManager = new ProductManager();
+        ProductManager productManager = new ();
         productManager.Add();
         productManager.Update();
 
