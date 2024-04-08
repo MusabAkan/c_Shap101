@@ -39,9 +39,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Constructors", "Constructor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generics", "Generics\Generics.csproj", "{28E8E589-45A6-4AB0-A145-9EFB41F673AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OPP_2", "OPP_2\OPP_2.csproj", "{24FE31E6-B10F-466A-B90A-7AD9DD39D07A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OPP_2", "OPP_2\OPP_2.csproj", "{24FE31E6-B10F-466A-B90A-7AD9DD39D07A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_3", "OOP_3\OOP_3.csproj", "{D4F33711-D563-4303-BE0C-22C9F69EF13E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP_3", "OOP_3\OOP_3.csproj", "{D4F33711-D563-4303-BE0C-22C9F69EF13E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes", "Classes\Classes.csproj", "{6359CF1D-3530-4D27-B564-717EF8FDDAF0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +131,10 @@ Global
 		{D4F33711-D563-4303-BE0C-22C9F69EF13E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4F33711-D563-4303-BE0C-22C9F69EF13E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4F33711-D563-4303-BE0C-22C9F69EF13E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6359CF1D-3530-4D27-B564-717EF8FDDAF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6359CF1D-3530-4D27-B564-717EF8FDDAF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6359CF1D-3530-4D27-B564-717EF8FDDAF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6359CF1D-3530-4D27-B564-717EF8FDDAF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
