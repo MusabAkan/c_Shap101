@@ -43,13 +43,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OPP_2", "OPP_2\OPP_2.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP_3", "OOP_3\OOP_3.csproj", "{D4F33711-D563-4303-BE0C-22C9F69EF13E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes", "Classes\Classes.csproj", "{6359CF1D-3530-4D27-B564-717EF8FDDAF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Classes", "Classes\Classes.csproj", "{6359CF1D-3530-4D27-B564-717EF8FDDAF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecapDemo", "RecapDemo\RecapDemo.csproj", "{9288F9DF-B091-42E9-97B2-D198662AE4FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecapDemo", "RecapDemo\RecapDemo.csproj", "{9288F9DF-B091-42E9-97B2-D198662AE4FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{40AD59C0-8541-45D2-87CA-E187C05339A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Interfaces", "Interfaces\Interfaces.csproj", "{40AD59C0-8541-45D2-87CA-E187C05339A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "Inheritance\Inheritance.csproj", "{C9E44D75-6413-4B13-A389-8EFA6E8FC414}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inheritance", "Inheritance\Inheritance.csproj", "{C9E44D75-6413-4B13-A389-8EFA6E8FC414}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfaceAbstractDemo", "InterfaceAbstractDemo\InterfaceAbstractDemo.csproj", "{85005B92-14E9-43A8-9A83-F13F81DD2649}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -153,6 +155,10 @@ Global
 		{C9E44D75-6413-4B13-A389-8EFA6E8FC414}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9E44D75-6413-4B13-A389-8EFA6E8FC414}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9E44D75-6413-4B13-A389-8EFA6E8FC414}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85005B92-14E9-43A8-9A83-F13F81DD2649}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85005B92-14E9-43A8-9A83-F13F81DD2649}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85005B92-14E9-43A8-9A83-F13F81DD2649}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85005B92-14E9-43A8-9A83-F13F81DD2649}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
