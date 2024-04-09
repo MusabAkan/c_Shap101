@@ -20,3 +20,13 @@
  
 
  select * from orde
+
+ select   c.ContactName as Musteri, p.ProductName as UrunAdi,   sum (od.UnitPrice *  od.Quantity) as Toplam from Orders o
+inner join [Order Details] od on od.OrderID = o.OrderID
+inner join Products p on od.ProductID = p.ProductID
+inner join Customers c on c.CustomerID = o.CustomerID
+where c.CustomerID ='VINET'
+group by c.ContactName, p.ProductName
+
+select*from Products
+ 
